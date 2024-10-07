@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback </h1>
+
+    <form>
+       <div> <label for="fname">First Name:</label> 
+        <input type="text" name="fname" id="fname" placeholder="Enter name here" > 
+        <label for="sname">Second Name:</label><input type="text" name="sname" id="sname" placeholder="Enter surname here">
+    </div>
+        <br>
+        <div>
+            <input type="radio" name="gender" id="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" name="gender" id="Female">
+            <label for="Female">Female</label>
+
+
+        </div><br>
+        <div>
+            <label for="email">email :</label>
+            <input type="email" placeholder="e-mail address" required name="email" id="email">
+
+        </div>
+
+    </div>
+    <br>
+    <div>
+        <label for="textarea">Comment :</label><br>
+        <textarea name="textarea" id="textarea" style="width: 300px;"></textarea>
+    </div>
+    <div>
+        <select name="frontend" id="frontend">
+            <option value="select" hidden>Select</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+    </div><br>
+    <button type="submit">Send Feedback</button>
+    <button type="reset">Reset</button>
+       
+    </form> 
+    
+</html>
