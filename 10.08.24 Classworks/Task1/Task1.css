@@ -1,0 +1,40 @@
+.title{
+    color: blue;
+    text-align: center;
+}
+
+.first{
+    padding: 90px;
+    background-color: lightgreen;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    
+}
+.second{
+    padding: 90px;
+    background-color: #ddaefa;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+}
+.third{
+    padding: 90px;
+    color: white;
+    background-color: rgb(155, 55, 128);
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+}
+.fourth{
+    padding: 90px;
+    color: white;
+    background-color: hsl(60, 22%, 50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+}

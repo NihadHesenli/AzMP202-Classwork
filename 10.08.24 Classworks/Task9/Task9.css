@@ -1,0 +1,4 @@
+.items span:nth-of-type(even){
+    background-color: red;
+    
+}
