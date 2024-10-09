@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.photo{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/030/353/613/small_2x/natural-background-ai-generated-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+
+}
+.head{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 90px;
+    line-height: 0.5px;
+}
