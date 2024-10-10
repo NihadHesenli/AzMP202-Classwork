@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/depositphotos_635479512-stock-photo-brown-wooden-wall-texture-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.head p{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px ;
+}
+
+.main h1{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 60px;
+}
+.main p{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button button{
+    border-radius: 14px;
+    padding:5px;
+    width: 100px;
+    border: none;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+
+}
+
