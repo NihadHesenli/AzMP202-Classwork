@@ -24,12 +24,19 @@
     border: 1px none black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
+<<<<<<< HEAD
     margin: 20px;
     position: relative;
 }
 
 .product{
     margin: 20px;   
+=======
+
+    position: relative;
+    margin: 25px auto;
+    
+>>>>>>> 44b8b0d7d5a0bd31ebc102306f85d68c2f4bae54
 }
 
 .products p
