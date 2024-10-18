@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes{
+    margin: 10px auto;
+    width: 1000px;
+    height: 100vh;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+
+.box-1{
+    background-color: red;
+}
+
+.box-1 h4{
+    display: none;
+}
+
+.box-1:hover{
+    transform: scale(1.5);
+}
+
+.box-1:hover p{
+    display: none;
+}
+
+.box-1:hover h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box-2{
+    background-color: green;
+}
+
+.box-2 h4{
+    display: none;
+}
+
+.box-2:hover{
+    transform: translate(50%, -100%);
+}
+
+.box-2:hover p{
+    display: none;
+}
+
+.box-2:hover h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.box-3{
+    background-color: blueviolet;
+}
+
+.box-3 h4{
+    display: none;
+}
+
+.box-3:hover{
+    transform: rotateY(360deg);
+}
+
+.box-3:hover p{
+    display: none;
+}
+
+.box-3:hover h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.box-4{
+    background-color: yellow;
+}
+
+.box-4 h4{
+    display: none;
+}
+
+.box-4:hover{
+    transform: skew(30deg);
+}
+
+.box-4:hover p{
+    display: none;
+}
+
+.box-4:hover h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
