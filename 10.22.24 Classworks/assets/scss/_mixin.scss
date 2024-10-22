@@ -1,0 +1,9 @@
+@mixin display($jus:center, $alig:center){
+    display: flex;
+    justify-content: $jus;
+    align-items: $alig;
+}
+
+@mixin HeadnFoot(){
+    padding: 40px 0;
+}

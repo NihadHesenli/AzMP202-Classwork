@@ -1,0 +1,25 @@
+#banger{
+    @include HeadnFoot();
+    background-color:$color-green;
+    .banger{
+        @include display(center,center);
+        flex-direction: column;
+        gap: 30px;
+
+        h1{
+            font-size: 4rem;
+            color: greenyellow;
+            margin-top: 10px;
+        }
+
+        p{
+            font-size: 1.3rem;
+            color: greenyellow;
+        }
+
+        button{
+            @extend %secondary-btn
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+header{
+    background-color: black;
+}
+
+.nav{
+    height: 55px;
+    @include display(space-between, center);
+
+    ul{
+        @include display(baseline , center);
+        gap: 30px;
+        margin-left: 30px;
+        a{
+                color: white; 
+
+        };
+
+        
+        
+    }
+    .nav-head{
+        input{
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        button{
+            @extend %primary-btn;
+
+        }
+    }
+
+    .nav-logo{
+        @include display();
+        gap: 10px;
+        i{
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+
+        .logo{
+            @include display();
+            font-size: 1.3rem;
+            gap: 7px;
+        }
+    }
+}
