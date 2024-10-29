@@ -167,15 +167,82 @@
 //     alert("qaqa sen partlatmisan")
 // }
 
-// task-11
+// task-11-1
 
-let age = +prompt("Yasivi qeyd ele")
+// let age = +prompt("Yasivi qeyd ele")
 
-if(age > 0){
-    if(age >= 65){
-        alert("Yasli ")
+// if(age > 0){
+//     if(age >= 65){
+//         alert("Yasli ")
+//     }else if(age < 65 && age >= 18){
+//         alert("Yetkin")
+//     }else if(age < 18){
+//         alert("Maladoy")
+//     }
+// }else{
+//     alert("menfi yas olur?")
+// }
 
-    }
-}else{
-    alert("menfi yas olur?")
-}
+// task-11-2
+
+// let dayHour = prompt("Saati daxil et")
+
+// if(dayHour < 24 && dayHour > 0){
+//     if(dayHour < 6){
+//         alert("Geceniz xeyir")
+//     }else if (dayHour < 12) {
+//         alert("Sabahiniz xeyir")
+//     }else if(dayHour < 17){
+//         alert("Gunortaniz xeyir")
+//     }else{
+//         alert("Axsaminiz xeyir")
+//     }
+
+// }else{
+//     alert("duzgun saat daxil et")
+// }
+
+// task-12
+
+// let x = +prompt("X deyisenin qiymetinin daxil edin")
+// let y = +prompt("Y deyisenin qiymetinin daxil edin")
+
+// if(x > 0 && y < 0){
+//     alert(x*4 + y*2 +4)
+
+// }else if(x > 0 && y === 0){
+//     alert(x*2 - y +3)
+// }else if(x < 0 && y > 0){
+//     alert(x*3 + y*4 +3)
+// }else{
+//     alert("X sifir ola bilmez")
+// }
+    
+// task-13
+
+// let salary = +prompt("Emek haqqinizi daxil edin")
+// let amount = +prompt("Istediyiniz meblegi daxil edin")
+// let month = +prompt("Istediyiniz Muddeti daxil edin")
+
+// let maxCredit = salary * 10;
+// let monthlyPayment = amount / month;
+
+// if(month < 36 && maxCredit > salary && monthlyPayment < salary * 0.45  ){
+//     if(month < 12){
+//         alert(`${amount} azn mebleq size 13% ${month} ay muddetinde ${monthlyPayment}`)
+
+//     }else if(month < 24 ){
+
+//         alert(`${amount} azn mebleq size 15% ${month} ay muddetinde ${monthlyPayment}`)
+
+//     }else if(month < 36){
+
+//         alert(`${amount} azn mebleq size 17% ${month} ay muddetinde ${monthlyPayment}`)
+//     }else{
+//         alert('size bu shertlerle kredit dushmur')
+//         console.error("size bu shertlerle kredit dushmur");
+//     }
+// }else{
+//     alert('size bu shertlerle kredit dushmur')
+//     console.error("size bu shertlerle kredit dushmur");
+// }
