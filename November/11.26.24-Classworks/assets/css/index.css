@@ -1,0 +1,23 @@
+#search{
+    margin-top: 50px;
+}
+.search-place .search-input{
+    padding: 7px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    row-gap: 12px;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 10px;
+    padding: 15px; 
+}
+
+img{
+    width: 100%;
+}

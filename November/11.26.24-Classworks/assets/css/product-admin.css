@@ -1,0 +1,56 @@
+#table{
+    margin-top: 50px;
+}
+
+.create .create-product{
+    padding: 10px 14px;
+    background-color: darkturquoise;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+thead{
+    text-align: left;    
+}
+th,td{
+    padding: 8px;
+}
+tr,th{
+    border-bottom: 1px solid black;
+}
+
+tbody{
+    text-align: left;
+}
+
+.edit{
+    padding: 7px 10px;
+    background-color: rgb(210, 156, 30);
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete{
+    padding: 7px 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+
+form div{
+    display: flex;
+    flex-direction: column; 
+    margin: 10px 0;
+}
+
+div input{
+    padding: 5px 7px;
+}

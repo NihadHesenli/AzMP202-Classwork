@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid(niad).css">
+    <link rel="stylesheet" href="./assets/css/product-admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="table">
+        <div class="container">
+            <div class="create">
+                <h1>Admin Product</h1>
+                <form>
+                    <div>
+                        <label for="image-input">Image:</label>
+                        <input type="text" placeholder="image..." class="image-input">
+                    </div>
+                    <div>
+                        <label for="name-input">Name:</label>
+                        <input type="text" class="name-input" placeholder="name...">
+                    </div>
+                    <div>
+                        <label for="category">Category:</label>
+                        <select name="category" id="" class="select">
+                            <option value="select" hidden>Select</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="des">Description:</label>
+                        <textarea name="des" id="des" class="description"></textarea>
+                    </div>
+                    <div>
+                        <label for="price-input">Price:</label>
+                        <input type="number" placeholder="price..." class="price-input">
+                    </div>
+                    <div>
+                        <label for="stock-input">Stock:</label>
+                        <input type="stock" placeholder="stock..." class="stock-input">
+                    </div>
+                    <button class="create-product"> Create Product</button>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>7</td>
+                        <td>nigga</td>
+                        <td>800</td>
+                        <td>niggas</td>
+                        <td>1000</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/product-admin.js" type="module"></script>
+</body>
+</html>
