@@ -16,8 +16,9 @@ async function getAllData(endpoints) {
     } catch (error) {
         console.error(error);
     }
-
 }
+
+
 
 function cardRender(array) {
     cards.innerHTML=''
