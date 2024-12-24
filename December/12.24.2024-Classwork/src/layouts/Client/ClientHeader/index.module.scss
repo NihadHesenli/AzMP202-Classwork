@@ -1,0 +1,22 @@
+header{
+    background-color: #78d34a;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 17px;
+                font-size: 19px;
+            }
+        }
+        button{
+            padding: 7px 10px;
+            border: none;
+            background-color: fuchsia;
+        }
+    }
+}
