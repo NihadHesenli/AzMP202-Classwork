@@ -30,6 +30,10 @@ function App() {
     console.log(todos)
   }
 
+  const editTodo = (id, newText) => {
+    setTodos(todos.map(t => t.id === id ? { ...t, text: newText } : t));
+  };
+
   const types = {
     all : "all",
     complated : "complated",
@@ -161,7 +165,7 @@ function App() {
         <input type="text" placeholder="Search your ToDo" className={"search"} onChange={(e)=>{setSearchInput(e.target.value.trim())}}/>
         </Col>
       </Row>
-      <TodoList filteredTodos={filteredTodos} deleteTodo={deleteTodo} complated={complated}/>
+      <TodoList filteredTodos={filteredTodos} deleteTodo={deleteTodo} complated={complated} editTodo={editTodo}/>
       <p className="mt-3">You have <span style={{color:'red'}}>{todos.filter((f)=>{return !f.isCompleted}).length}</span> pending todos</p>
     </Container>
   );

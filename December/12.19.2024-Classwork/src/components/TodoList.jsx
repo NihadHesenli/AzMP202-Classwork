@@ -5,8 +5,18 @@ import { Button, Form, Modal } from "react-bootstrap";
 import propTypes from 'prop-types';
 import { useState } from 'react';
 
-function TodoList({filteredTodos,deleteTodo,complated}) {
+function TodoList({filteredTodos,deleteTodo,complated,editTodo}) {
     const [showModal, setShowModal] = useState(false)
+    const [current, setCurrent] = useState(null);
+    const [input, setInput] = useState("");
+
+    const saveChange = ()=>{
+        if (input.trim() === "") return;
+        editTodo(current.id,input)
+        setShowModal(false)
+        setCurrent(null)
+    }
+
     return (
         <>
         {filteredTodos && filteredTodos.map((t)=>{
@@ -21,7 +31,7 @@ function TodoList({filteredTodos,deleteTodo,complated}) {
             <span className={t.isCompleted ? "complated" : ""}>{t.text}</span>
             </div>
             <div className="todo-buttons">
-                <button className="edit-btn" onClick={()=>{setShowModal(true)}}>
+                <button className="edit-btn" onClick={()=>{setShowModal(true);setCurrent(t);setInput(t.text)}}>
                     <FaEdit />
                 </button>
                 <button className="delete-btn"
@@ -40,13 +50,15 @@ function TodoList({filteredTodos,deleteTodo,complated}) {
                     <Form.Control
                         type="text"
                         placeholder="Edit your todo"
+                        value={input}
+                        onChange={(e)=>{setInput(e.target.value)}}
                     />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={()=>{setShowModal(false)}}>
                         Cancel
                     </Button>
-                    <Button variant="primary">
+                    <Button variant="primary" onClick={saveChange}>
                         Save Changes
                     </Button>
                 </Modal.Footer>
@@ -63,5 +75,6 @@ TodoList.propTypes = {
     })).isRequired,
     deleteTodo: propTypes.func.isRequired,
     complated: propTypes.func.isRequired,
+    editTodo: propTypes.func.isRequired
 };
 export default TodoList;
