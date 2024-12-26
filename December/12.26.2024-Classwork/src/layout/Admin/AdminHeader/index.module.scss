@@ -1,0 +1,29 @@
+header{
+    background-color: #33f6a3;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 17px;
+                font-size: 19px;
+                li{
+                    list-style: none;    
+                    text-decoration: none;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        button{
+            padding: 7px 10px;
+            border: none;
+            background-color: aqua;
+        }
+    }
+}
