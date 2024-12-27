@@ -14,6 +14,9 @@ const AdminHeader = () => {
                         <li>
                             <NavLink to={"/admin"}>Dashboard</NavLink>
                         </li>
+                        <li>
+                            <NavLink to={"/admin/product-list"}>Products</NavLink>
+                        </li>
                     </ul>
                 </nav>
                 <button>Log out</button>

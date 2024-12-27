@@ -15,10 +15,10 @@ const ClientHeader = () => {
                             <NavLink to={"/"}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/Products"}>Products</NavLink>
+                            <NavLink to={"/products"}>Products</NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/Contact"}>Contact</NavLink>
+                            <NavLink to={"/contact"}>Contact</NavLink>
                         </li>
                     </ul>
                 </nav>

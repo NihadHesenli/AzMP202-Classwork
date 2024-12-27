@@ -11,6 +11,13 @@ header{
                 justify-content: center;
                 gap: 17px;
                 font-size: 19px;
+                li{
+                    list-style: none;    
+                    text-decoration: none;
+                    a{
+                        text-decoration: none;
+                    }
+                }    
             }
         }
         button{
