@@ -21,7 +21,7 @@ const ClientHeader = () => {
                             <NavLink to={"/products"}>Products</NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/favorites"}>Favorites <span>0</span></NavLink>
+                            <NavLink to={"/favoritest"}>Favorites <span>0</span></NavLink>
                         </li>
                     </ul>
                 </nav>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Tooltip  } from 'antd';
 import {endpoints} from '../../../services/contest'
-import getAllData from '../../../services/helpers';
+import {getAllData , deleteDataById} from '../../../services/helpers';
 import styles from './index.module.scss'
 
-const columns = [
+const columns =(deleteButton)=> [
   {title: 'id',
    dataIndex: 'id'},
   {
@@ -45,11 +45,13 @@ const columns = [
   },
   {
     title: 'Actions',
-    render: () => (
+    render: (_,prod) => (
       <div>
         <button 
           type="link" 
-          className={styles['delete']}>
+          className={styles['delete']}
+          onClick={() => deleteButton(prod.id)}
+          >
           Delete
         </button>
         <button 
@@ -74,6 +76,11 @@ const ProductTable = () => {
     setProducts(res)
   }
 
+  const deleteButton = async(id)=>{
+    await deleteDataById(endpoints.products,id)
+    getAllProducts()
+  }
+
   useEffect(() => {
     getAllProducts()
   }, [])
@@ -83,7 +90,7 @@ const ProductTable = () => {
     <div className="container">
       <div className="admin-products">
         <Table
-          columns={columns}
+          columns={columns(deleteButton)}
           dataSource={products}
           onChange={onChange}
           showSorterTooltip={{

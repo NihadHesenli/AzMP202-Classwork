@@ -10,4 +10,22 @@ const getAllData = async(endpoint)=>{
     }
 }
 
-export default getAllData
+const getAllDataById = async(endpoint,id)=>{
+    try{
+        const res = await axios(`${BASE_URL}/${endpoint}/${id}`)
+        return res.data
+    } catch(error){
+        console.log(error);
+    }
+}
+
+const deleteDataById = async(endpoint,id)=>{
+    try {
+        const res = await axios.delete(`${BASE_URL}/${endpoint}/${id}`)
+        return res
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export { getAllData, getAllDataById, deleteDataById}
