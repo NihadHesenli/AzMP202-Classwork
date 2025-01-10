@@ -13,8 +13,9 @@ const Products = () => {
   const [products,setProducts] = useState([])
   const [search , setSearch] = useState("")
   const [sort,setSort] = useState('default')
-  const [fav,favToggle] = useContext(FavoritestContext)
+  const {fav,favToggle} = useContext(FavoritestContext)
   const navigate = useNavigate(); 
+  
 
   const filtered = products.filter((p)=>{
    return  p.title.toLowerCase().includes(search.toLocaleLowerCase().trim())
@@ -65,9 +66,7 @@ const Products = () => {
             actions={[
               <ShoppingCartOutlined />,
               <EyeOutlined onClick={()=> detailIcon(product.id) }/>,
-              fav.find((item) => item.id === product.id) 
-              ? <HeartFilled onClick={() => favToggle(product)} style={{ color: 'red' }} />
-              : <HeartOutlined onClick={() => favToggle(product)} />
+              
             ]}
             style={{
               width: '100%',
@@ -78,7 +77,9 @@ const Products = () => {
               transition: 'transform 0.3s ease',  
             }}
           >
-            
+            {fav && fav.find((item) => item.id === product.id) 
+              ? <HeartFilled onClick={() => favToggle(product)} style={{ color: 'red' }} />
+              : <HeartOutlined onClick={() => favToggle(product)} />}
             <Title level={4}>{product.title}</Title>
             <Space direction="vertical" size={6}>
               <p>{product.description.length > 80 ? `${product.description.slice(0, 80)}...` : product.description}</p>

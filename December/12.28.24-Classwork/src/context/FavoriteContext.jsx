@@ -1,6 +1,6 @@
 import  { createContext, useState } from 'react'
 
-export const FavoritestContext = createContext(null)
+export const FavoritestContext = createContext()
 
 const FavoriteProvider = ({children}) => {
 

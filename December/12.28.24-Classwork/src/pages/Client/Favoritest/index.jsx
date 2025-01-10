@@ -5,7 +5,7 @@ import {FavoritestContext } from '../../../context/FavoriteContext'
 
 const Favorites = () => {
 
-  const [fav,favToggle,clearAllFav] = useContext(FavoritestContext)
+  const {fav,favToggle,clearAllFav} = useContext(FavoritestContext)
 
   return (
     <>

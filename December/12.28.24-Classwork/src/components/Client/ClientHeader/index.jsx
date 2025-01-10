@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './index.module.scss'
+import { FavoritestContext } from '../../../context/FavoriteContext'
 
 const ClientHeader = () => {
+
+    const { fav } = useContext(FavoritestContext)
+
   return (
     <header>
         <div className="header">
@@ -21,7 +25,7 @@ const ClientHeader = () => {
                             <NavLink to={"/products"}>Products</NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/favoritest"}>Favorites <span>0</span></NavLink>
+                            <NavLink to={"/favoritest"}>Favorites <span>{fav.length}</span></NavLink>
                         </li>
                     </ul>
                 </nav>
