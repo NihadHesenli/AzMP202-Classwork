@@ -16,7 +16,7 @@ const getTheDataById = async(req,res)=>{
         const product = await prod.findById(id)
         res.send(product)
     } catch (error) {
-        res.status(500).jsom({message : error.message})
+        res.status(500).json({message : error.message})
     }
 }
 
@@ -26,7 +26,7 @@ const deleteTheData = async(req,res)=>{
         const deleted = await prod.findByIdAndDelete(id)
         res.status(201).json(deleted)
     } catch (error) {
-        res.status(500).jsom({message : error.message})
+        res.status(500).json({message : error.message})
     }
 }
 
@@ -39,7 +39,7 @@ const addNewData = async(req,res)=>{
         const newProd = prod({...req.body})
         await newProd.save()
     } catch (error) {
-        res.status(500).jsom({message : error.message})
+        res.status(500).json({message : error.message})
     }
 }
 
